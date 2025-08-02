@@ -16,27 +16,27 @@ body{
     flex-direction:column;
 }
 .input-username{
-    width:200px;
+    width:300px;
     font-size: medium;
-    height: 20px;
+    height: 5vh;
     margin-left:100px;
-    margin-top: 20px;
+    margin-top: 40px;
     color: rgb(0, 0, 0);
 }
 #description{
     color:rgb(0, 0, 0);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: large;
     font: bold;
     height: 80px;
     width: 400px;
     margin-left:100px;
-    margin-top:300px;
+    margin-top:400px;
     }
 
 button{
-    width:100px;
+    width:130px;
     margin-left:100px;
     margin-top:20px;
-    
+    height:5vh;
 }
