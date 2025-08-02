@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction:row;
+}
+.sending-container{
+    border:5px blue solid;
+    width: 700px;
+}
+.reciving-container{
+    border:5px blue solid;
+    width: 700px;
+}
+.input-button{
+    display:flex;
+    flex-direction:column;
+}
+.input-username{
+    width:200px;
+    font-size: medium;
+    height: 20px;
+    margin-left:100px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+#description{
+    color:rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: large;
+    font: bold;
+    height: 80px;
+    width: 400px;
+    margin-left:100px;
+    margin-top:300px;
+    }
+
+button{
+    width:100px;
+    margin-left:100px;
+    margin-top:20px;
+    
+}
