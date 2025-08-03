@@ -6,8 +6,8 @@ A modern, real-time messaging application built with Socket.IO, featuring a slee
 Login Interface
 ![Login Interface](screenshots dual-panel design with gradient background)
 
-Message Exchange
-![Message Exchange](public/images/login.png)
+loginpage
+![Login-Page](public/images/login.png)
 
 Message-box
 ![Message-box](public/images/user1.png)
