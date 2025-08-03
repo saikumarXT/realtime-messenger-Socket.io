@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MESSANGER_PAGE</title>
     <link rel="stylesheet"  href="index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
         <div class="sending-container">
              <div class="input-button">
             <input type="text" class="input-username" placeholder="Enter user name...."/>
-           <textarea id="description" placeholder="Enter the Message...." rows="4" cols="50">
-</textarea>
-            <button onclick="send()" class="send-button">SEND</button>
+           <input type="text" id="description" placeholder="Enter the Message...." />
+            <button onclick="send();" class="send-button">SEND</button>
         </div>
         </div>
         <div class="reciving-container">receive-message</div>
 
-<script sr="script.js"></script>
+
 </body>
 </html>
