@@ -3,23 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MESSANGER_PAGE</title>
-    <link rel="stylesheet"  href="index.css"/>
+    <title>Real-Time Messenger | MIT Demo</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-        <div class="sending-container">
-             <div class="input-button">
-            <input type="text" class="input-username" placeholder="Enter user name...."/>
-           <input type="text" id="description" placeholder="Enter the Message...." />
-            <button onclick="send();" class="send-button">SEND</button>
-        </div>
-        </div>
-        <div class="reciving-container">receive-message</div>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-comments logo-icon"></i>
+                    <h1>RealTime Messenger</h1>
+                </div>
+                <div class="status-indicator">
+                    <div class="status-dot online"></div>
+                    <span>Connected</span>
+                </div>
+            </div>
+        </header>
 
+        <div class="main-content">
+            <!-- Sending Panel -->
+            <div class="sending-container">
+                <div class="panel-header">
+                    <i class="fas fa-paper-plane"></i>
+                    <h2>Send Message</h2>
+                </div>
+                
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="username">Recipient Username</label>
+                        <input type="text" id="username" class="input-username" placeholder="Enter recipient username..." />
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="description" rows="6" placeholder="Type your message here..."></textarea>
+                    </div>
+                    
+                    <button onclick="send();" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </div>
+            </div>
 
+            <!-- Receiving Panel -->
+            <div class="receiving-container">
+                <div class="panel-header">
+                    <i class="fas fa-inbox"></i>
+                    <h2>Messages</h2>
+                </div>
+                
+                <div class="messages-area" id="messages-area">
+                    <div class="no-messages">
+                        <i class="fas fa-comments"></i>
+                        <p>No messages yet. Start a conversation!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
